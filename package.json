@@ -4,12 +4,13 @@
   "main": "index.js",
   "author": "Dilshan de Silva 2017",
   "scripts": {
-    "watch": "webpack-dev-server",
+    "watch": "npm run dev",
     "build:webpack": "webpack --progress --colors --config ./webpack.production.config.js",
     "build:babel": "babel --out-dir build src --copy-files",
+    "dev": "webpack-dev-server",
     "build": "npm run clean && npm run build:babel && npm run build:webpack",
-    "clean": "rm -rf dist && rm -rf build",
     "start": "cross-env NODE_ENV=production node build/server.js",
+    "clean": "rm -rf dist && rm -rf build",
     "postinstall": "npm run build && npm start"
   },
   "devDependencies": {
