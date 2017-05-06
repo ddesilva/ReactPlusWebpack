@@ -13,13 +13,6 @@
 ### Deploy
 *has postinstall script for hosting on heroku etc..*
 
-Deploy using Ziet Now (https://zeit.co/docs)
-
-```npm install -g now (install now package globally)
-
-```now (deploy)```
-
-
 
 ## Features
 
