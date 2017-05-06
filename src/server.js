@@ -2,7 +2,7 @@ import express from 'express';
 import compression from 'compression';
 import globalConfig from './globalConfig';
 
-const port = process.env['PORT'] || 9002;
+const port = process.env['PORT'] || 8080;
 const publicAddr = process.env['ADDR'] || '127.0.0.1';
 globalConfig.serverState = {port: port, addr: publicAddr};
 const server = express();

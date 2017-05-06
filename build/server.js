@@ -18,7 +18,7 @@ var _globalConfig2 = _interopRequireDefault(_globalConfig);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var port = process.env['PORT'] || 9002;
+var port = process.env['PORT'] || 8080;
 var publicAddr = process.env['ADDR'] || '127.0.0.1';
 _globalConfig2.default.serverState = { port: port, addr: publicAddr };
 var server = (0, _express2.default)();

@@ -1,7 +1,6 @@
 {
   "name": "ReactPlusWebpack",
   "version": "1.0.0",
-  "main": "index.js",
   "author": "Dilshan de Silva 2017",
   "scripts": {
     "watch": "npm run dev",
@@ -9,7 +8,7 @@
     "build:babel": "babel --out-dir build src --copy-files",
     "dev": "webpack-dev-server",
     "build": "npm run clean && npm run build:babel && npm run build:webpack",
-    "start": "cross-env NODE_ENV=production node build/server.js",
+    "start": "cross-env ADDR=127.0.0.1 PORT=8080 NODE_ENV=production node build/server.js",
     "clean": "rm -rf dist && rm -rf build",
     "postinstall": "npm run build && npm start"
   },
@@ -49,7 +48,6 @@
     "webpack-uglify-js-plugin": "^1.1.9"
   },
   "dependencies": {
-    "react-slick": "^0.14.11",
     "react": "^15.0.1",
     "react-dom": "^15.0.1"
   }
